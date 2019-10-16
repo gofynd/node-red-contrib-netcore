@@ -1,0 +1,32 @@
+{
+  "name": "red-contrib-netcore",
+  "version": "0.1.0",
+  "description": "node-red-contrib-netcore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gofynd/node-red-contrib-netcore.git"
+  },
+  "author": "Jigar Dafda<jigar.dafda@gmail.com>",
+  "license": "MIT",
+  "node-red": {
+    "version": ">=0.14.0",
+    "nodes": {
+      "SMS Config": "nodes/sms_config.js",
+      "SMS Out": "nodes/sms_out.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/gofynd/node-red-contrib-netcore/issues"
+  },
+  "homepage": "https://github.com/gofynd/node-red-contrib-netcore#readme",
+  "dependencies": {
+    "form-data": "^2.5.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "xml-js": "^1.6.11"
+  }
+}

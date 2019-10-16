@@ -1,0 +1,40 @@
+<script type="text/javascript">
+
+      RED.nodes.registerType('netcore_sms_out',{
+        category: 'Netcore',
+        color: 'rgb(176, 223, 227)',
+        defaults: {
+            name: {
+                value: ''
+            },
+            configuration: {
+                value: '',
+                type: 'netcore_sms_config'
+            },
+        },
+        icon: 'template.png',
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name || 'SMS Out';
+        },
+        oneditprepare: function() {
+       
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="netcore_sms_out">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-configuration"><i class="fa fa-tag"></i> Configuration</label>
+        <input type="text" id="node-input-configuration">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="netcore_sms_out">
+    <p>Will Come in Future</p>
+</script>
