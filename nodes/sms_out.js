@@ -18,7 +18,7 @@ module.exports = function(RED) {
 		this.on('input', function(msg, send, done) {
 
 			const csv = msg.payload.filter(o => o && o.mobile && o.template).map(x => {
-				return `"${x.mobile}","${x.template}";
+				return `"${x.mobile}","${x.template}"`;
 			}).join('\n') + "\n";
 
 			var t = new Date().getTime();
