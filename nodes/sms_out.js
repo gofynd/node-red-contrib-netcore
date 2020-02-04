@@ -36,7 +36,7 @@ module.exports = function(RED) {
 						username: configNode.username,
 		        		password: configNode.password,
 		        		feedid: configNode.feed_id,
-		        		sender_id: configNode.sender_id,
+		        		senderid: configNode.sender_id,
 		        		override_dnd: String(configNode.override_dnd),
 		        		upload: fs.createReadStream(tmpfile)
 					};
